@@ -58,10 +58,10 @@ if register(D1,0x0000FF,"1") == true then
 end
 --gpu = component.gpu
 --gpu.setResolution(3,3)
-m.broadcast(D1, "modem.open(DS)")
-m.broadcast(D2, "modem.open(DS)")
-m.broadcast(D3, "modem.open(DS)")
-m.broadcast(D4, "modem.open(DS)")
-m.broadcast(D5, "modem.open(DS)")
+m.broadcast(D1, "modem.open("..DS..")")
+m.broadcast(D2, "modem.open("..DS..")")
+m.broadcast(D3, "modem.open("..DS..")")
+m.broadcast(D4, "modem.open("..DS..")")
+m.broadcast(D5, "modem.open("..DS..")")
 os.sleep(1)
 sendCMD(DS, "drone.setLightColor(0xFF55F5)")
