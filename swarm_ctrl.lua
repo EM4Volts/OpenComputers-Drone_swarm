@@ -6,31 +6,31 @@ tempX = 0 -- init for dicts and vars
 tempY = 0
 tempZ = 0
 local D1 = {
-    port = 21390,
+    port = 901,
     xpos = 0,
     ypos = 0,
     zpos = 0,
 }
 local D2 = {
-    port = 21391,
+    port = 902,
     xpos = 0,
     ypos = 0,
     zpos = 0,
 }
 local D3 = {
-    port = 21392,
+    port = 903,
     xpos = 0,
     ypos = 0,
     zpos = 0,
 }
 local D4 = {
-    port = 21393,
+    port = 904,
     xpos = 0,
     ypos = 0,
     zpos = 0,
 }
 local D5 = {
-    port = 21394,
+    port = 905,
     xpos = 0,
     ypos = 0,
     zpos = 0,
@@ -41,7 +41,7 @@ D3P = D3["port"]
 D4P = D4["port"]
 D5P = D5["port"]
 
-DS = 21389
+DS = 900
 m.open(DS) --opening required ports for wireless modem
 m.open(D1P)
 m.open(D2P)
