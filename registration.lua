@@ -2,12 +2,12 @@ local component = require("component")
 local event = require("event")
 local keyboard = require("keyboard")
 local m = component.modem
-DS = 21389
-D1 = 21390
-D2 = 21391
-D3 = 21392
-D4 = 21393
-D5 = 21394
+DS = 900
+D1 = 901
+D2 = 902
+D3 = 903
+D4 = 904
+D5 = 905
 m.open(DS)
 m.open(D1)
 m.open(D2)
@@ -29,7 +29,7 @@ function idMove(dId,x,y,z)
 end
 function swarmMove(x,y,z)
     cmdString = "drone.move("..tostring(x)..","..tostring(y)..","..tostring(z)..")"
-    m.broadcast(21389, cmdString)
+    m.broadcast(DS, cmdString)
 end
 function register(droneId, lightCol, dText) --register drone id lightcolor and the text to display dinamically
     local _, _, from, port, _, message = event.pull("modem_message")
@@ -58,9 +58,10 @@ if register(D1,0x0000FF,"1") == true then
 end
 --gpu = component.gpu
 --gpu.setResolution(3,3)
-m.broadcast(D1, "modem.open(21389)")
-m.broadcast(D2, "modem.open(21389)")
-m.broadcast(D3, "modem.open(21389)")
-m.broadcast(D4, "modem.open(21389)")
-m.broadcast(D5, "modem.open(21389)")
+m.broadcast(D1, "modem.open(DS)")
+m.broadcast(D2, "modem.open(DS)")
+m.broadcast(D3, "modem.open(DS)")
+m.broadcast(D4, "modem.open(DS)")
+m.broadcast(D5, "modem.open(DS)")
+os.sleep(1)
 sendCMD(DS, "drone.setLightColor(0xFF55F5)")
