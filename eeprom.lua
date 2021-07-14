@@ -3,7 +3,7 @@ function require(x)
 end
 drone = require("drone")
 modem = require("modem")
-band = 21389
+band = 900
 modem.open(band)
 drone.setStatusText("Registering...")
 modem.broadcast(band, "confirm")
