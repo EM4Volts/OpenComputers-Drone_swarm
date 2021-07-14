@@ -1,6 +1,6 @@
 # OpenComputers-Drone_swarm
 Multi part script to control multiple drones at once in the MC mod "OpenComputers"
-The goal was to make a script that is like https://github.com/rahul-pisharody/OpenComputers-Delta-Swarm because that one isnt working and ist in developement anymore so i decided to make my own
+The goal was to make a script that is like https://github.com/rahul-pisharody/OpenComputers-Delta-Swarm because that one isnt working and isnt in developement anymore so i decided to make my own
 
 # How to use:
 flash "eeprom" on an eeprom for a drone and craft it with 5 drones (drone needs an wireless card)
