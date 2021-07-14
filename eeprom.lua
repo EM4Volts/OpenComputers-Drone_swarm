@@ -17,7 +17,7 @@ modem.close(band)
 drone.setLightColor(cmd2)
 drone.setStatusText(cmd3)
 modem.open(tonumber(band2))
-modem.broadcast(band2, "ok")
+modem.broadcast(tonumber(band2), "ok")
 while true do
     local evt,_,src,prt,_,msg,data = computer.pullSignal()
     load(msg)()
